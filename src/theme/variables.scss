@@ -34,12 +34,55 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #c70039,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
 );
+
+// $font-family-md-base: "appFont";
+// $font-family-ios-base: "appFont";
+
+ion-title{text-align: center;}
+ion-segment-button{text-transform: capitalize !important}
+$searchbar-md-input-background-color : rgba(0, 0, 0, .2);
+$searchbar-md-input-clear-icon-color : #fff;
+$searchbar-md-input-placeholder-color : #fff;
+$searchbar-md-input-search-icon-color : #fff;
+$searchbar-md-input-text-color : #fff;
+
+.rewardCard{
+  border-radius:3px !important;
+  background-color:#fefefe !important;
+  margin:5px 5px 5px 4px !important;
+  width:95% !important
+}
+
+.cardItem{
+  margin:0px !important;
+  padding:0px !important;
+  font-size:14px !important;
+  padding-left:10px !important;
+}
+
+.desc{
+  color: #898D99;
+  font-size:12px;
+  // font-family: appFontSemiBold
+}
+.input-wrapper{
+  height: auto
+}
+
+.cardBtn{
+  text-align:center;padding:10px;background-color:#F7F8FC;color:#c70039;font-weight:500
+}
+
+.boxShadow{
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      margin:9px 9px 0px 9px;
+}
 
 
 // App iOS Variables

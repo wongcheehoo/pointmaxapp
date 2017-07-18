@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <ion-buttons start left>
+      <button ion-button icon-only disabled>
+        <ion-icon name=""></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Reward
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goSearch()'>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar style="padding:0px;min-height:auto;">
+    <ion-segment [(ngModel)]="rewardCategory" color="primary">
+      <ion-segment-button value="available">
+        Available
+      </ion-segment-button>
+      <ion-segment-button value="used">
+        Used
+      </ion-segment-button>
+      <ion-segment-button value="expired">
+        Expired
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="background-color:#EBECEE">
+  <div [ngSwitch]="rewardCategory">
+    <div *ngSwitchCase="'available'">
+      <!-- <div style="text-align:center;padding-top:15%">
+        <img src="img/cute-panda-bear.png" style="width:60%">
+        <p>No {{rewardCategory}} rewards at the moment !</p>
+      </div>  -->
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6 style="padding:0px">
+            <ion-card class="rewardCard">
+              <img src="img/kfc_test.jpg" style="padding:5px"/>
+                <ion-item class="cardItem">Mini Family Bucket <br> <span class="desc">Offer still 12 Dec 2017</span></ion-item>
+              <div class="cardBtn">
+                Use now</div>
+            </ion-card>
+          </ion-col>
+
+          <ion-col col-6 style="padding:0px">
+            <ion-card class="rewardCard">
+              <img src="img/kfc_test.jpg" style="padding:5px"/>
+                <ion-item class="cardItem">Mini Family Bucket <br> <span class="desc">Offer still 12 Dec 2017</span></ion-item>
+              <div class="cardBtn">
+                Use now</div>
+            </ion-card>
+          </ion-col>
+
+          <ion-col col-6 style="padding:0px">
+            <ion-card class="rewardCard">
+              <img src="img/kfc_test.jpg" style="padding:5px"/>
+                <ion-item class="cardItem">Mini Family Bucket <br> <span class="desc">Offer still 12 Dec 2017</span></ion-item>
+              <div class="cardBtn">
+                Use now</div>
+            </ion-card>
+          </ion-col>
+
+          <ion-col col-6 style="padding:0px">
+            <ion-card class="rewardCard">
+              <img src="img/kfc_test.jpg" style="padding:5px"/>
+                <ion-item class="cardItem">Mini Family Bucket <br> <span class="desc">Offer still 12 Dec 2017</span></ion-item>
+              <div class="cardBtn">
+                Use now</div>
+            </ion-card>
+          </ion-col>
+
+          
+         
+   
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div *ngSwitchCase="'used'">
+      <div style="text-align:center;padding-top:15%">
+        <img src="img/cute-panda-bear.png" style="width:60%">
+        <p>No {{rewardCategory}} rewards at the moment !</p>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'expired'">
+      <div style="text-align:center;padding-top:15%">
+        <img src="img/cute-panda-bear.png" style="width:60%">
+        <p>No {{rewardCategory}} rewards at the moment !</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

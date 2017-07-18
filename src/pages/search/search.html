@@ -1,0 +1,28 @@
+<!--
+  Generated template for the SearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-searchbar
+  placeholder='Search...'  
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider color="light">Search results in {{type}}</ion-item-divider>
+    <!-- <ion-item>Angola</ion-item> -->
+    
+  </ion-item-group>
+</ion-content>
